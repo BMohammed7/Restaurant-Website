@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Italian Spoon</title>
+    <link rel="stylesheet" href="stylecart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <img src="spoon.jpeg" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>  
+                <li><a href="login.html">My Account</a></li> 
+                <li><a href="cart.html">online order</a></li>
+                <li><a href="menu_checkout.html">Checkout</a></li>
+                <li><a href="learnmore.html">learn more</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="menu">
+            <h1>FOR INSTORE PICKUP <strong>CASH ORDERS ONLY!</strong> FOR CREDIT/DEBIT CLICK<a href="menu.html">HERE</a></h1>
+            <h2>Pizza</h2>
+            <div class="menu-item">
+                <h3>Margherita</h3>
+                <p>Classic pizza topped with fresh tomato sauce, creamy mozzarella, and fresh basil.</p>
+                <p><strong>Price: $12.99</strong></p>
+                <button onclick="addToCart('Margherita', 12.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Pepperoni</h3>
+                <p>A savory pizza loaded with spicy pepperoni slices, tomato sauce, and melted mozzarella.</p>
+                <p><strong>Price: $13.99</strong></p>
+                <button onclick="addToCart('Pepperoni', 13.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Vegetarian</h3>
+                <p>A colorful medley of bell peppers, onions, olives, mushrooms, and mozzarella.</p>
+                <p><strong>Price: $14.99</strong></p>
+                <button onclick="addToCart('Vegetarian', 14.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Meat Lovers</h3>
+                <p>A hearty pizza with pepperoni, sausage, ham, bacon, and melted mozzarella.</p>
+                <p><strong>Price: $15.99</strong></p>
+                <button onclick="addToCart('Meat Lovers', 15.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Four Cheese</h3>
+                <p>A creamy blend of mozzarella, parmesan, gorgonzola, and ricotta cheeses on a crisp crust.</p>
+                <p><strong>Price: $14.99</strong></p>
+                <button onclick="addToCart('Four Cheese', 14.99)">Add to Cart</button>
+            </div>
+        
+            <h2>Pasta</h2>
+            <div class="menu-item">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Rich spaghetti with crispy pancetta, creamy egg sauce, and parmesan cheese.</p>
+                <p><strong>Price: $13.99</strong></p>
+                <button onclick="addToCart('Spaghetti Carbonara', 13.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Penne Arrabbiata</h3>
+                <p>Spicy penne pasta tossed in a zesty tomato and garlic chili sauce.</p>
+                <p><strong>Price: $12.99</strong></p>
+                <button onclick="addToCart('Penne Arrabbiata', 12.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Lasagne</h3>
+                <p>Layered pasta with rich meat sauce, creamy béchamel, and melted cheese.</p>
+                <p><strong>Price: $15.99</strong></p>
+                <button onclick="addToCart('Lasagne', 15.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Fettuccine Alfredo</h3>
+                <p>Creamy Alfredo sauce with fresh parmesan and fettuccine pasta.</p>
+                <p><strong>Price: $14.99</strong></p>
+                <button onclick="addToCart('Fettuccine Alfredo', 14.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Pesto Genovese</h3>
+                <p>Fresh basil pesto tossed with al dente pasta and parmesan cheese.</p>
+                <p><strong>Price: $13.49</strong></p>
+                <button onclick="addToCart('Pesto Genovese', 13.49)">Add to Cart</button>
+            </div>
+        
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>Rich and aromatic single shot of Italian espresso.</p>
+                <p><strong>Price: $3.99</strong></p>
+                <button onclick="addToCart('Espresso', 3.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Red Wine</h3>
+                <p>A glass of full-bodied Italian red wine.</p>
+                <p><strong>Price: $7.99</strong></p>
+                <button onclick="addToCart('Red Wine', 7.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Water</h3>
+                <p>Refreshing still or sparkling water.</p>
+                <p><strong>Price: $1.99</strong></p>
+                <button onclick="addToCart('Water', 1.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Lemonade</h3>
+                <p>Sweet and tangy homemade lemonade.</p>
+                <p><strong>Price: $3.49</strong></p>
+                <button onclick="addToCart('Lemonade', 3.49)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Iced Tea</h3>
+                <p>Chilled tea with a hint of lemon and sweetness.</p>
+                <p><strong>Price: $3.49</strong></p>
+                <button onclick="addToCart('Iced Tea', 3.49)">Add to Cart</button>
+            </div>
+        
+            <h2>Sides</h2>
+            <div class="menu-item">
+                <h3>Garlic Bread</h3>
+                <p>Freshly baked bread with garlic butter and parsley.</p>
+                <p><strong>Price: $5.99</strong></p>
+                <button onclick="addToCart('Garlic Bread', 5.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Bruschetta</h3>
+                <p>Toasted bread topped with fresh tomatoes, basil, and olive oil.</p>
+                <p><strong>Price: $7.99</strong></p>
+                <button onclick="addToCart('Bruschetta', 7.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Caprese Salad</h3>
+                <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p>
+                <p><strong>Price: $8.49</strong></p>
+                <button onclick="addToCart('Caprese Salad', 8.49)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Stuffed Mushrooms</h3>
+                <p>Button mushrooms stuffed with cheese, garlic, and breadcrumbs.</p>
+                <p><strong>Price: $6.99</strong></p>
+                <button onclick="addToCart('Stuffed Mushrooms', 6.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Mozzarella Sticks</h3>
+                <p>Golden fried mozzarella sticks with marinara dipping sauce.</p>
+                <p><strong>Price: $6.49</strong></p>
+                <button onclick="addToCart('Mozzarella Sticks', 6.49)">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="cart">
+            <h2>Your Order</h2>
+            <ul id="cart-items" class="cart-list"></ul>
+            <p><strong>Total: $<span id="total-price">0</span></strong></p>
+            <p class="note"><strong>Note:</strong> Payment is only available in cash.</p>
+            <form id="order-form" onsubmit="sendOrder(event)">
+                <h3>Address</h3>
+                <div class="address-fields">
+                    <div>
+                        <label for="street">Street:</label>
+                        <input type="text" id="street" required placeholder="Enter your street">
+                    </div>
+                    <div>
+                        <label for="house-number">House Number:</label>
+                        <input type="text" id="house-number" required placeholder="Enter your house number">
+                    </div>
+                    <div>
+                        <label for="zip-code">Postal Code:</label>
+                        <input type="text" id="zip-code" required placeholder="Enter your postal code" maxlength="6">
+                    </div>
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" required placeholder="Enter your city">
+                    </div>
+                </div>
+                <div class="cash-confirmation">
+                    <input type="checkbox" id="cash-confirm" />
+                    <label for="cash-confirm">I understand that payment is only available in cash.</label>
+                </div>
+                <button type="submit">Send Order</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 The Italian Spoon. All rights reserved.</p>
+    </footer>
+    <script src="scriptcart.js"></script>
+</body>
+</html>

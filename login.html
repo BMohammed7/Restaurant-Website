@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - The Italian Spoon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <header class="header">
+        <div class="navbar">
+            <img src="spoon.jpeg" class="logo">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>  
+              <li><a href="login.html">My Account</a></li> 
+              <li><a href="cart.html">online order</a></li>
+              <li><a href="menu_checkout.html">Checkout</a></li>
+              <li><a href="learnmore.html">learn more</a></li>
+            </ul>
+        </div>
+        <h1>Welcome to The Italian Spoon</h1>
+    	<p>Please log in to access your account</p>
+    </header>
+
+  <section id="login">
+    <h2>Login to Your Account</h2>
+    <form id="logform" method="POST">
+      
+      <label for="email">Email</label>
+     
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <p id="msgforlogin"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 The Italian Spoon. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

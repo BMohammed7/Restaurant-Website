@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - The Italian Spoon</title>
+    <link rel="stylesheet" href="menu_styles.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>  
+                <li><a href="login.html">My Account</a></li> 
+                <li><a href="cart.html">online order</a></li>
+                <li><a href="menu_checkout.html">Checkout</a></li>
+                <li><a href="learnmore.html">learn more</a></li>
+            </ul>
+        </div>
+
+    <main class="checkout-main">
+        <section id="order-summary">
+            <h2>Your Order</h2>
+            <ul id="order-list"></ul>
+            <p id="total">Total: $0.00</p>
+        </section>
+
+        <section id="checkout-form">
+            <h2>Checkout</h2>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv"  maxlength="3" required>
+
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" maxlength="4" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="menu_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: url('menu_background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.menu-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    text-align: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none; 
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width:0%;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+.menu-main, .checkout-main {
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    color: #ff4c4c;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 2px 2px 5px rgba(255, 76, 76, 0.6);
+}
+
+.menu-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu-category {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.category-title {
+    font-size: 1.8rem;
+    color: #ff4c4c;
+    border-bottom: 2px solid #ff4c4c;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Brush Script MT', cursive;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-category li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.menu-category li:hover {
+    color: #ff4c4c;
+}
+
+.price {
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+#order-summary, #checkout-form {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#order-summary h2, #checkout-form h2 {
+    color: #ff4c4c;
+    font-size: 2rem;
+    border-bottom: 2px solid #ff4c4c;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(255, 76, 76, 0.6);
+}
+
+#checkout-form label {
+    color: #ff4c4c;
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#checkout-form input, #checkout-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ff4c4c;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#checkout-form button {
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    width: 100%;
+    background-color: #ff4c4c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#checkout-form button:hover {
+    background-color: #e55342;
+}
